@@ -131,6 +131,10 @@ ol {
   cursor: pointer;
 }
 
+.search-form__label:has(.search-form__checkbox):active {
+  text-decoration: none;
+}
+
 
 .search-form__pseudo-checkbox {
   display: flex;
@@ -158,10 +162,6 @@ ol {
   width: 15px;
   height: 15px;
   background-color: #fff;
-}
-
-.search-form__label:active {
-  text-decoration: none;
 }
 
 
@@ -206,7 +206,7 @@ ol {
 .search-form__submit-button {
   align-self: flex-end;
   width: 194px;
-  height: 34px;
+  min-height: 34px;
 }
 
 .content__details {
@@ -237,14 +237,14 @@ ol {
   display: flex;
   flex-flow: column nowrap;
   width: 400px;
-  height: 298px;
+  height: 300px;
   padding: 2px;
   overflow: auto;
   overflow-x: hidden;
 }
 
 .content__list-item:not(:last-child) {
-  margin-bottom: 28px;
+  margin-bottom: 31px;
 }
 
 .content__card-link {
@@ -278,7 +278,6 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 2px;
 }
 
 .content__video-card-title {
@@ -312,7 +311,7 @@ ol {
 }
 
 .content__video-card-description-container {
-  width: 190px;
+  max-width: 185px;
 }
 
 .more-button {
